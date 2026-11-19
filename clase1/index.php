@@ -1,0 +1,34 @@
+<?php
+$nombre = "Cristhian";
+$edad = 34;
+$ciudad = "San Lorenzo";
+$carrera = "Ingeniería en Sistemas";
+echo "Hola, mi nombre es $nombre, tengo $edad años, vivo en $ciudad y estudio $carrera.";
+echo "<br><br>";
+//ficha de producto
+$nombreProducto = "coca cola 2l";
+$precio = 15000.50;
+$stock = 20;
+$disponible = true;
+var_dump($nombreProducto);
+var_dump($precio);  
+var_dump($stock);
+var_dump($disponible);
+echo "<br><br>";
+$precioGaseosa = 12000;
+$cantidadGaseosa = 2;
+$subtotalGaseosa = $precioGaseosa * $cantidadGaseosa;
+echo "El subtotal de la compra es: $subtotalGaseosa";
+echo "<br><br>";
+$precioGalletitas = 4500;
+$cantidadGalletitas = 3;
+$subtotalGalletitas = $precioGalletitas * $cantidadGalletitas;
+echo "El subtotal de la compra es: $subtotalGalletitas";
+echo "<br><br>";
+$totalAPagar = $subtotalGaseosa + $subtotalGalletitas;
+echo "El total a pagar es: $totalAPagar";
+echo "<br><br>";
+$iva = $totalAPagar / 11;
+echo "iva incluido:" . round($iva) . " GS<br>";
+echo "<br>";
+echo "Total sin iva:" . round($totalAPagar - $iva) . " GS<br>";
